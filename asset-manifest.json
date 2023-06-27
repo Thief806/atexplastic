@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/atexplastic/static/css/main.76c9a5c4.css",
+    "main.js": "/atexplastic/static/js/main.c7e38a4a.js",
+    "static/js/787.49e96512.chunk.js": "/atexplastic/static/js/787.49e96512.chunk.js",
+    "index.html": "/atexplastic/index.html",
+    "main.76c9a5c4.css.map": "/atexplastic/static/css/main.76c9a5c4.css.map",
+    "main.c7e38a4a.js.map": "/atexplastic/static/js/main.c7e38a4a.js.map",
+    "787.49e96512.chunk.js.map": "/atexplastic/static/js/787.49e96512.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76c9a5c4.css",
+    "static/js/main.c7e38a4a.js"
+  ]
+}
