@@ -1,0 +1,90 @@
+// Global colors
+$primary-font-color: rgb(20, 20, 20);
+$secondary-font-color: rgb(70, 70, 70);
+$primary-background-color: rgb(240, 240, 240);
+
+$hover-color: rgb(220, 220, 220);
+
+$border-radius-small: 5px;
+$border-radius-mid: 10px;
+$border-radius-large: 15px;
+$border-radius-round: 50%;
+
+// Imports
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap");
+@import "./header.scss";
+@import "./hero.scss";
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+button {
+	font-family: "Open Sans", sans-serif;
+	border-color: $primary-font-color;
+	border: 2px solid $primary-font-color;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+
+	color: $primary-font-color;
+	background-color: $primary-background-color;
+	list-style-type: none;
+	text-decoration: none;
+	font-size: 1.8rem;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-font-color);
+	-webkit-tap-highlight-color: var(--primary-font-color);
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	//margin-bottom: 50px;
+	padding: 0;
+}
+
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color: $primary-font-color;
+}
+
+.hover-underline-animation::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: $primary-font-color;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+@media (min-width: 1400px) {
+}

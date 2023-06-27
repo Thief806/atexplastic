@@ -1,0 +1,64 @@
+.header-navigation {
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+
+	.header-logo {
+		font-weight: 800;
+		width: 140px;
+		font-size: 1.6rem;
+	}
+
+	.middle-navigation {
+		display: none;
+
+		.header-nav-item {
+			margin: 0 30px;
+			font-weight: 500;
+			color: $secondary-font-color;
+		}
+
+		.header-nav-item.active {
+			color: $primary-font-color;
+			border-bottom: 2px solid;
+			border-image-width: 80%;
+			font-weight: 700;
+		}
+	}
+
+	.contact-button {
+		font-weight: 700;
+		font-size: 1.2rem;
+		width: 100px;
+		height: 30px;
+		background-color: $primary-background-color;
+		border-radius: $border-radius-large;
+	}
+}
+
+@media (min-width: 768px) {
+	.header-navigation {
+		height: 100px;
+
+		.middle-navigation {
+			display: flex;
+		}
+
+		.header-logo {
+			width: 140px;
+			font-size: 2.2rem;
+		}
+
+		.contact-button {
+			font-size: 1.6rem;
+			width: 140px;
+			height: 40px;
+		}
+
+		.contact-button:hover {
+			background-color: $hover-color;
+			border-width: 3px;
+		}
+	}
+}
