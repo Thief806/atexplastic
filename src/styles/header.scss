@@ -28,6 +28,7 @@
 	}
 
 	.contact-button {
+		cursor: pointer;
 		font-weight: 700;
 		font-size: 1.2rem;
 		width: 100px;
@@ -57,7 +58,7 @@
 		}
 
 		.contact-button:hover {
-			background-color: $hover-color;
+			background-color: white;
 			border-width: 3px;
 		}
 	}

@@ -1,39 +1,65 @@
 .hero-left {
 	max-width: 350px;
+	//margin: 0 auto;
+
 	.main-slogan {
-		margin-top: 20px;
+		margin: 50px 0 10px 0;
 		font-size: 2.6rem;
 	}
 
 	.hero-buttons {
 		display: flex;
 		margin-top: 20px;
-		gap: 20px;
+		justify-content: space-between;
+		gap: 8px;
 	}
 }
 
 .hero-right {
-	display: none;
+	//display: none;
+	img {
+		margin-top: 40px;
+		width: 100%;
+	}
 }
 
 .offer-button {
-	width: 120px;
-	height: 34px;
+	width: 100%;
+	font-size: 1.4rem;
+	font-weight: 700;
+	padding: 12px 0;
 	border-radius: $border-radius-large;
 	background-color: $primary-font-color;
 	color: $primary-background-color;
+	border: 2px solid $primary-font-color;
+	text-align: center;
 }
 
 .products-button {
-	width: 120px;
-	height: 34px;
+	width: 100%;
+	padding: 12px 0;
+	font-size: 1.4rem;
 	border-radius: $border-radius-large;
+	border: 2px solid $primary-font-color;
+	text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	.hero-section {
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.hero-left {
+		.offer-button:hover {
+			background-color: black;
+			color: white;
+		}
+
+		.products-button:hover {
+			background-color: white;
+			font-weight: 500;
+		}
 	}
 
 	.hero-right {
@@ -41,8 +67,14 @@
 
 		img {
 			width: auto;
-			max-width: 450px;
+			max-width: 300px;
 		}
+	}
+}
+
+@media (min-width: 768px) {
+	.hero-right img {
+		max-width: 450px;
 	}
 }
 
