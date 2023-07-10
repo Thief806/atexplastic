@@ -3,6 +3,7 @@
 	justify-content: space-between;
 	height: 80px;
 	align-items: center;
+	margin-bottom: 20px;
 
 	.header-logo {
 		font-weight: 800;
@@ -25,6 +26,12 @@
 			border-image-width: 80%;
 			font-weight: 700;
 		}
+
+		button {
+			border-width: 0;
+			background-color: $primary-background-color;
+			font-size: 1.8rem;
+		}
 	}
 
 	.contact-button {
@@ -34,7 +41,7 @@
 		width: 100px;
 		height: 30px;
 		background-color: $primary-background-color;
-		border-radius: $border-radius-large;
+		border-radius: $border-radius-mid;
 	}
 }
 

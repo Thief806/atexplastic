@@ -1,7 +1,7 @@
 // Global colors
 $primary-font-color: rgb(20, 20, 20);
 $secondary-font-color: rgb(70, 70, 70);
-$primary-background-color: rgb(240, 240, 240);
+$primary-background-color: rgb(248, 248, 248);
 
 $hover-color: rgb(220, 220, 220);
 
@@ -11,9 +11,13 @@ $border-radius-large: 15px;
 $border-radius-round: 50%;
 
 // Imports
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap");
-@import "./header.scss";
-@import "./hero.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+@import "/src/components/Header/header.scss";
+@import "/src/components/Footer/footer.scss";
+@import "/src/components/Hero/hero.scss";
+@import "/src/components/SupportedAreas/supported-areas.scss";
+@import "/src/components/Products/products.scss";
+@import "/src/components/Reviews/reviews.scss";
 
 *,
 *::before,

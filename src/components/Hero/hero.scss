@@ -1,9 +1,13 @@
+.hero-section {
+	margin-bottom: 50px;
+}
+
 .hero-left {
 	max-width: 350px;
-	//margin: 0 auto;
+	margin: 0 auto;
 
 	.main-slogan {
-		margin: 50px 0 10px 0;
+		margin-bottom: 10px;
 		font-size: 2.6rem;
 	}
 
@@ -16,10 +20,12 @@
 }
 
 .hero-right {
-	//display: none;
+	display: flex;
+	margin-top: 80px;
 	img {
-		margin-top: 40px;
 		width: 100%;
+		max-width: 400px;
+		margin: 0 auto;
 	}
 }
 
@@ -39,6 +45,7 @@
 	width: 100%;
 	padding: 12px 0;
 	font-size: 1.4rem;
+	font-weight: 500;
 	border-radius: $border-radius-large;
 	border: 2px solid $primary-font-color;
 	text-align: center;
@@ -51,6 +58,7 @@
 	}
 
 	.hero-left {
+		margin: 0;
 		.offer-button:hover {
 			background-color: black;
 			color: white;
@@ -58,16 +66,17 @@
 
 		.products-button:hover {
 			background-color: white;
-			font-weight: 500;
+			font-weight: 600;
 		}
 	}
 
 	.hero-right {
 		display: inline-flex;
+		margin: 0;
 
 		img {
 			width: auto;
-			max-width: 300px;
+			max-width: 320px;
 		}
 	}
 }
@@ -78,21 +87,71 @@
 	}
 }
 
+@media (min-width: 950px) {
+	.hero-right img {
+		max-width: 500px;
+	}
+}
+
 @media (min-width: 1024px) {
 	.hero-left {
-		zoom: 1.2;
+		margin-top: 40px;
+		.main-slogan {
+			font-size: 3.2rem;
+		}
 	}
 
 	.hero-right img {
-		zoom: 1.2;
+		max-width: 600px;
+	}
+}
+
+@media (min-width: 1100px) {
+	.hero-section .hero-left {
+		margin-top: 100px;
+	}
+	.hero-right img {
+		max-width: 700px;
 	}
 }
 
 @media (min-width: 1200px) {
-	.hero-left {
-		zoom: 1.8;
+	.hero-section {
+		.hero-left {
+			max-width: 500px;
+			margin-top: 120px;
+			.main-slogan {
+				font-size: 4.8rem;
+			}
+
+			p {
+				font-size: 2.4rem;
+			}
+		}
+
+		.hero-right img {
+			//max-width: 860px;
+		}
+
+		.hero-buttons {
+			margin-top: 30px;
+		}
+
+		.offer-button {
+			padding: 16px;
+			font-size: 2rem;
+		}
+
+		.products-button {
+			padding: 16px;
+			font-size: 2rem;
+			font-weight: 500;
+		}
 	}
+}
+
+@media (min-width: 1450px) {
 	.hero-right img {
-		zoom: 1.8;
+		max-width: 860px;
 	}
 }
