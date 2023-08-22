@@ -1,72 +1,73 @@
 .header-navigation {
-	display: flex;
-	justify-content: space-between;
-	height: 80px;
-	align-items: center;
-	margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  max-width: 1400px;
 
-	.header-logo {
-		font-weight: 800;
-		width: 140px;
-		font-size: 1.6rem;
-	}
+  .header-logo {
+    font-weight: 800;
+    width: 140px;
+    font-size: 1.6rem;
+  }
 
-	.middle-navigation {
-		display: none;
+  .middle-navigation {
+    display: none;
 
-		.header-nav-item {
-			margin: 0 30px;
-			font-weight: 500;
-			color: $secondary-font-color;
-		}
+    .header-nav-item {
+      margin: 0 30px;
+      font-weight: 500;
+      color: $secondary-font-color;
+    }
 
-		.header-nav-item.active {
-			color: $primary-font-color;
-			border-bottom: 2px solid;
-			border-image-width: 80%;
-			font-weight: 700;
-		}
+    .header-nav-item.active {
+      color: $primary-font-color;
+      border-bottom: 2px solid;
+      border-image-width: 80%;
+      font-weight: 700;
+    }
 
-		button {
-			border-width: 0;
-			background-color: $primary-background-color;
-			font-size: 1.8rem;
-		}
-	}
+    button {
+      border-width: 0;
+      background-color: $primary-background-color;
+      font-size: 1.8rem;
+    }
+  }
 
-	.contact-button {
-		cursor: pointer;
-		font-weight: 700;
-		font-size: 1.2rem;
-		width: 100px;
-		height: 30px;
-		background-color: $primary-background-color;
-		border-radius: $border-radius-mid;
-	}
+  .contact-button {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 100px;
+    height: 30px;
+    background-color: $primary-background-color;
+    border-radius: $border-radius-mid;
+  }
 }
 
 @media (min-width: 768px) {
-	.header-navigation {
-		height: 100px;
+  .header-navigation {
+    height: 100px;
 
-		.middle-navigation {
-			display: flex;
-		}
+    .middle-navigation {
+      display: flex;
+    }
 
-		.header-logo {
-			width: 140px;
-			font-size: 2.2rem;
-		}
+    .header-logo {
+      width: 140px;
+      font-size: 2.2rem;
+    }
 
-		.contact-button {
-			font-size: 1.6rem;
-			width: 140px;
-			height: 40px;
-		}
+    .contact-button {
+      font-size: 1.6rem;
+      width: 140px;
+      height: 40px;
+    }
 
-		.contact-button:hover {
-			background-color: white;
-			border-width: 3px;
-		}
-	}
+    .contact-button:hover {
+      background-color: white;
+      border-width: 3px;
+    }
+  }
 }
