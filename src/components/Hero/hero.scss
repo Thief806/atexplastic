@@ -1,7 +1,7 @@
 .hero-section {
   margin-bottom: 50px;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 .hero-left {
@@ -79,6 +79,7 @@
     img {
       width: auto;
       max-width: 320px;
+      margin-left: 30px;
     }
   }
 }
@@ -113,7 +114,7 @@
     margin-top: 100px;
   }
   .hero-right img {
-    max-width: 700px;
+    max-width: 650px;
   }
 }
 
@@ -129,10 +130,6 @@
       p {
         font-size: 2.4rem;
       }
-    }
-
-    .hero-right img {
-      //max-width: 860px;
     }
 
     .hero-buttons {
@@ -153,7 +150,7 @@
 }
 
 @media (min-width: 1450px) {
-  .hero-right img {
-    max-width: 860px;
-  }
+  // .hero-right img {
+  //   max-width: 860px;
+  // }
 }

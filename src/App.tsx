@@ -7,6 +7,7 @@ import Reviews from "./components/Reviews/Reviews";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 import Header from "./components/Header/Header";
 import ProductHeader from "./components/Header/ProductHeader";
+import CustomProduct from "./components/CustomProduct/CustomProduct";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Hero />
               <SupportedAreas />
               <Products />
+              <CustomProduct/>
               <Reviews />
             </>
           }

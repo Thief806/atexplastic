@@ -19,6 +19,7 @@ $border-radius-round: 50%;
 @import "/src/components/Products/products.scss";
 @import "/src/components/Reviews/reviews.scss";
 @import "/src/components/ProductDetail/productDetail.scss";
+@import "/src/components/CustomProduct/customProduct.scss";
 
 *,
 *::before,
@@ -31,6 +32,7 @@ $border-radius-round: 50%;
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 button {

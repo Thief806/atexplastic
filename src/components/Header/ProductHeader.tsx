@@ -1,4 +1,4 @@
-import React, { MouseEvent } from "react";
+import React, { MouseEvent, useEffect } from "react";
 
 function ProductHeader() {
   const handleClick = (id: string) => (e: MouseEvent) => {
@@ -19,6 +19,8 @@ function ProductHeader() {
         >
           Kezdőlap
         </a>
+        <a href="/#products" className="header-nav-item hover-underline-animation">Termékek</a>
+        <a href="/#customproduct" className="header-nav-item hover-underline-animation">Személyre szabás</a>
       </div>
       <button onClick={handleClick("contact")} className="contact-button">
         Kapcsolat

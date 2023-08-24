@@ -13,7 +13,7 @@ function Header() {
             <div className="middle-navigation">
                 <a href="/" className="header-nav-item active hover-underline-animation">Kezdőlap</a>
                 <button onClick={handleClick('products')} className="header-nav-item hover-underline-animation">Termékek</button>
-                <button onClick={handleClick('about')} className="header-nav-item hover-underline-animation">Rólunk</button>
+                <button onClick={handleClick('customproduct')} className="header-nav-item hover-underline-animation">Személyre szabás</button>
             </div>
             <button onClick={handleClick('contact')} className="contact-button">Kapcsolat</button>
         </nav>

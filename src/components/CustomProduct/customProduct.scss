@@ -1,0 +1,44 @@
+.custom-product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  
+  .custom-product-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .custom-product-description {
+    margin-top: 20px;
+  }
+
+  .custom-product-info {
+    max-width: 400px;
+  }
+  
+  /* For larger screens */
+  @media (min-width: 768px) {
+    /* Adjust the breakpoint as needed */
+    .custom-product-detail {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 900px;
+      margin: 120px auto;
+    }
+  
+    .custom-product-image {
+      margin-right: 60px;
+      margin-bottom: 0;
+    }
+  
+    .custom-product-info {
+      text-align: left;
+      flex: 1; /* Takes up the remaining space after the image */
+    }
+  }
+  

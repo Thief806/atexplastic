@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export const products = [
@@ -52,6 +53,14 @@ export const products = [
 ];
 
 function Products() {
+  useEffect(() => {
+    if (window.location.hash) {
+      const element = document.querySelector(window.location.hash);
+      if (element) {
+        element.scrollIntoView();
+      }
+    }
+  }, []);
   return (
     <div id="products" className="products-section">
       <h1 className="products-title">Termékeink</h1>
