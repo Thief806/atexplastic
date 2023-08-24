@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/atexplastic/static/css/main.4e12d3dc.css",
-    "main.js": "/atexplastic/static/js/main.c5a746ef.js",
+    "main.css": "/atexplastic/static/css/main.862e1535.css",
+    "main.js": "/atexplastic/static/js/main.402161e4.js",
     "static/js/787.49e96512.chunk.js": "/atexplastic/static/js/787.49e96512.chunk.js",
     "index.html": "/atexplastic/index.html",
-    "main.4e12d3dc.css.map": "/atexplastic/static/css/main.4e12d3dc.css.map",
-    "main.c5a746ef.js.map": "/atexplastic/static/js/main.c5a746ef.js.map",
+    "main.862e1535.css.map": "/atexplastic/static/css/main.862e1535.css.map",
+    "main.402161e4.js.map": "/atexplastic/static/js/main.402161e4.js.map",
     "787.49e96512.chunk.js.map": "/atexplastic/static/js/787.49e96512.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e12d3dc.css",
-    "static/js/main.c5a746ef.js"
+    "static/css/main.862e1535.css",
+    "static/js/main.402161e4.js"
   ]
 }
