@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+    padding-top: 30px;
   }
   
   .custom-product-image {
@@ -41,4 +42,14 @@
       flex: 1; /* Takes up the remaining space after the image */
     }
   }
-  
+  @media (min-width: 1024px) {
+    .custom-product-detail {
+      max-width: 1000px;
+    }
+
+  }
+  @media (min-width: 1200px) {
+    .custom-product-detail {
+      max-width: 1200px;
+    }
+  }
