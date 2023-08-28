@@ -1,4 +1,5 @@
 import React, { MouseEvent } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
     const handleClick = (id: string) => (e: MouseEvent) => {
@@ -9,9 +10,12 @@ function Header() {
 
     return (
         <nav className="header-navigation">
-            <a href="/"><h1 className="header-logo">ATEXPLASTIC</h1></a>
+            {/* Use the Link component for client-side routing */}
+            <Link to="/"><h1 className="header-logo">ATEXPLASTIC</h1></Link>
             <div className="middle-navigation">
-                <a href="/" className="header-nav-item active hover-underline-animation">Kezdőlap</a>
+                <Link to="/" className="header-nav-item active hover-underline-animation">Kezdőlap</Link>
+
+                {/* Continue using buttons for scrolling */}
                 <button onClick={handleClick('products')} className="header-nav-item hover-underline-animation">Termékek</button>
                 <button onClick={handleClick('customproduct')} className="header-nav-item hover-underline-animation">Személyre szabás</button>
             </div>

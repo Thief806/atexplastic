@@ -1,32 +1,27 @@
-import React, { MouseEvent, useEffect } from "react";
+import React, { MouseEvent } from 'react';
+import { Link } from 'react-router-dom';
 
 function ProductHeader() {
-  const handleClick = (id: string) => (e: MouseEvent) => {
-    e.preventDefault();
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
+    const handleClick = (id: string) => (e: MouseEvent) => {
+        e.preventDefault();
+        const element = document.getElementById(id);
+        element?.scrollIntoView({ behavior: "smooth" });
+    }
 
-  return (
-    <nav className="header-navigation">
-      <a href="/">
-        <h1 className="header-logo">ATEXPLASTIC</h1>
-      </a>
-      <div className="middle-navigation">
-        <a
-          href="/"
-          className="header-nav-item active hover-underline-animation"
-        >
-          Kezdőlap
-        </a>
-        <a href="/#products" className="header-nav-item hover-underline-animation">Termékek</a>
-        <a href="/#customproduct" className="header-nav-item hover-underline-animation">Személyre szabás</a>
-      </div>
-      <button onClick={handleClick("contact")} className="contact-button">
-        Kapcsolat
-      </button>
-    </nav>
-  );
+    return (
+        <nav className="header-navigation">
+            {/* Use the Link component for client-side routing */}
+            <Link to="/"><h1 className="header-logo">ATEXPLASTIC</h1></Link>
+            <div className="middle-navigation">
+                <Link to="/" className="header-nav-item active hover-underline-animation">Kezdőlap</Link>
+                
+                {/* Hash links to scroll to sections */}
+                <Link to="/#products" className="header-nav-item hover-underline-animation">Termékek</Link>
+                <Link to="/#customproduct" className="header-nav-item hover-underline-animation">Személyre szabás</Link>
+            </div>
+            <button onClick={handleClick('contact')} className="contact-button">Kapcsolat</button>
+        </nav>
+    )
 }
 
 export default ProductHeader;
