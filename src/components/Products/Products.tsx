@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const products = [
   {
     id: 1,
-    name: "Product Name 1",
+    name: "Product Name 100",
     image: "/images/test-product-img.png",
     details: ["property 1", "property 2", "property 3", "property 4"],
     description:
