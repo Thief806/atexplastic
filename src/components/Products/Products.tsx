@@ -38,7 +38,7 @@ export const products = [
     id: 5,
     name: "Product Name 5",
     image: "/images/test-product-img.png",
-    details: ["property 1", "property 2", "property 3", "property 4"],
+    details: ["property 5", "property 2", "property 3", "property 4"],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
   },
