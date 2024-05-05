@@ -25,34 +25,7 @@
     max-width: 900px;
     margin: 60px auto;
   }
-
-  .product-imageslider {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    margin-right: 60px;
-    margin-bottom: 0;
-  }
-
-.prev, .next {
-  width: 2em;
-  height: 2em;
-  cursor: pointer;
-  transition: 0.25s;
-}
-
-    .prev:hover, .next:hover {transform: scale(1.25);}
-
-    .prev {background-image: "/images/logo192.png";}
-    .next {background-image: "/images/logo192.png";}
-
-    img {
-      scroll-snap-align: start;
-      min-width: 100%;
-      border-radius: 0.2em;
-    }
-
+  
   .product-info {
     text-align: left;
     flex: 1; /* Takes up the remaining space after the image */
