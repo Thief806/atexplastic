@@ -1,3 +1,4 @@
+import { EOL } from "os";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -8,7 +9,7 @@ export const products = [
     image: "/images/Mini_jar50ml.jpg",
     details: ["Tégely Anyaga: PET", "Tető anyaga: PP", "Súly: 15g", "Befogó méretek: 50mm x 40mm"],
     description:
-      "Nyaktípus: menetes", "Forma: hengeres",  "A tégely és tető színe megegyezés szerint változtatható.",
+      "Nyaktípus: menetes  Forma: hengeres  A tégely és tető színe megegyezés szerint változtatható.",
     },
   {
     id: 2,
