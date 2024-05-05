@@ -7,16 +7,21 @@ import { Slide } from 'react-slideshow-image'
 const ProductDetail = () => {
   const { id } = useParams();
   const product = products.find((p) => p.id === parseInt(id));
+  const images = imageslider
 
   if (!product) return <p>Product not found</p>;
 
   return (
     <div className="product-detail">
-      <img
-        className="product-imageslider"
+      <div className='product-imageslider'>
+        <div className="prev"></div>
+        <div className="slide-panel">
+          {ImageList.map(image => {return(<img src={image} /> )})}
+        </div>
+        <div className="next"></div>
         src={process.env.PUBLIC_URL + product.image}
         alt={product.name}
-      />
+      </div>
       <div className="product-info">
         <h2 className="product-name">{product.name}</h2>
         {product.details.map((detail, index) => (
