@@ -13,7 +13,7 @@ const ProductDetail = () => {
   return (
     <div className="product-detail">
       <img
-        className="product-image"
+        className="product-imageslider"
         src={process.env.PUBLIC_URL + product.image}
         alt={product.name}
       />
