@@ -1,6 +1,8 @@
 import React from "react";
 import { products } from "../Products/Products";
 import { useParams } from "react-router-dom";
+import 'react-slideshow-image/dist/styles.css'
+import { Slide } from 'react-slideshow-image'
 
 const ProductDetail = () => {
   const { id } = useParams();
