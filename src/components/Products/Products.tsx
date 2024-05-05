@@ -6,10 +6,11 @@ export const products = [
     id: 1,
     name: "Mini tégely 50ml",
     image: "/images/Mini_jar50ml.jpg",
+    imageslider: ["/images/Mini_jar50ml.jpg", "/images/test-product-img.png"],
     details: ["Tégely Anyaga: PET", "Tető anyaga: PP", "Súly: 15g", "Befogó méretek: 50mm x 40mm"],
     description:
       "Lorems ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
-  },
+    },
   {
     id: 2,
     name: "Product Name 2",
