@@ -11,10 +11,10 @@ const ProductDetail = () => {
 
   return (
     <div className="product-detail">
-      <div className='product-imageslider'>
+      <img product-image>
         src={process.env.PUBLIC_URL + product.image}
         alt={product.name}
-      </div>
+      </img>
 
       <div className="product-info">
         <h2 className="product-name">{product.name}</h2>
