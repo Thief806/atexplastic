@@ -8,7 +8,7 @@ export const products = [
     image: "/images/Mini_jar50ml.jpg",
     details: ["Tégely Anyaga: PET", "Tető anyaga: PP", "Súly: 15g", "Befogó méretek: 50mm x 40mm"],
     description:
-      "Lorems ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
+      "Nyaktípus: menetes", "Forma: hengeres",  "A tégely és tető színe megegyezés szerint változtatható.",
     },
   {
     id: 2,
