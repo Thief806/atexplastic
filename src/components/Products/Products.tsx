@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export const products = [
   {
     id: 1,
-    name: "Product Name 100",
-    image: "/images/test-product-img.png",
-    details: ["property 1", "property 2", "property 3", "property 4"],
+    name: "Mini tégely 50ml",
+    image: "/images/Mini_jar50ml.jpg",
+    details: ["Tégely Anyaga: PET", "Tető anyaga: PP", "Súly: 15g", "Befogó méretek: 50mm x 40mm"],
     description:
       "Lorems ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
   },
