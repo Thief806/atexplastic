@@ -20,7 +20,7 @@ function App() {
             <>
               <Header />
               <Hero />
-              <SupportedAreas />
+              {/* <SupportedAreas /> */}
               <CategorySegment />
               <CustomProduct />
               <Reviews />
