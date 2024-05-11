@@ -5,7 +5,7 @@
   margin-bottom: 60px;
 }
 
-.product-imageslider {
+.product-image {
   width: 100%;
   max-width: 400px;
   margin-bottom: 20px;
@@ -26,9 +26,14 @@
     margin: 60px auto;
   }
 
+  .product-image {
+    // margin-right: 60px;
+    margin-bottom: 0;
+  }
+
   .product-info {
+    margin-left: 100px;
     text-align: left;
     flex: 1; /* Takes up the remaining space after the image */
   }
 }
-

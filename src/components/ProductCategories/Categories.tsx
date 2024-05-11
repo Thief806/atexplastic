@@ -1,25 +1,13 @@
 import { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export const products = [
+export const Categories = [
   {
     id: 1,
-    name: "Mini tégely 50ml",
-    images: [
-      "/images/Mini_jar50ml.jpg",
-      "/images/Mini_jar50ml.jpg",
-      "/images/Mini_jar50ml.jpg",
-      "/images/Mini_jar50ml.jpg",
-    ],
-    details: [
-      "Tégely Anyaga: PET",
-      "Tető anyaga: PP",
-      "Súly: 15g",
-      "Befogó méretek: 50mm x 40mm",
-    ],
-    category: "Mini",
-    description:
-      "Nyaktípus: menetes  Forma: hengeres  A tégely és tető színe megegyezés szerint változtatható.",
+    name: "Mini tégely",
+    categoryName: "Mini",
+    images: ["/images/Mini_jar50ml.jpg"],
+    details: ["Tégely Anyaga: PET", "Tető anyaga: PP"],
   },
   {
     id: 2,
@@ -28,7 +16,6 @@ export const products = [
     details: ["property 1", "property 2", "property 3", "property 4"],
     description:
       "Lorems ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
-    category: "Mini",
   },
   {
     id: 3,
@@ -43,7 +30,6 @@ export const products = [
     name: "Product Name 4",
     images: ["/images/test-product-img.png"],
     details: ["property 1", "property 2", "property 3", "property 4"],
-    category: "",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
   },
@@ -65,12 +51,7 @@ export const products = [
   },
 ];
 
-const Products = () => {
-  const { categoryName } = useParams<{ categoryName: string }>();
-  const categoryProducts = products.filter(
-    (product) => product.category === categoryName
-  );
-
+function CategorySegment() {
   useEffect(() => {
     if (window.location.hash) {
       const element = document.querySelector(window.location.hash);
@@ -81,30 +62,36 @@ const Products = () => {
   }, []);
 
   return (
-    <div id="products" className="products-section">
-      <h1 className="products-title">{categoryName}</h1>
-      <div className="products-grid">
-        {categoryProducts.map((product) => (
-          <div key={product.id} className="products-grid-element">
-            <Link to={`/product/${product.id}`}>
-              {product.images.length > 0 && (
-                <img
-                  src={process.env.PUBLIC_URL + product.images[0]}
-                  alt={product.name}
-                />
-              )}
-            </Link>
-            <div className="products-details">
-              <h2>{product.name}</h2>
-              {product.details.map((detail, index) => (
-                <p key={index}>- {detail}</p>
-              ))}
-            </div>
-          </div>
-        ))}
+    <div id="products" className="categories-section">
+      <h1 className="categories-title">Termékeink</h1>
+      <div className="categories-grid">
+        {Categories.map(
+          (category) =>
+            category.categoryName && (
+              <div key={category.id} className="categories-grid-element">
+                <Link
+                  to={`/${category.categoryName}`}
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  {category.images.length > 0 && (
+                    <img
+                      src={process.env.PUBLIC_URL + category.images[0]}
+                      alt={category.name}
+                    />
+                  )}
+                </Link>
+                <div className="categories-details">
+                  <h2>{category.name}</h2>
+                  {category.details.map((detail, index) => (
+                    <p key={index}>- {detail}</p>
+                  ))}
+                </div>
+              </div>
+            )
+        )}
       </div>
     </div>
   );
-};
+}
 
-export default Products;
+export default CategorySegment;
