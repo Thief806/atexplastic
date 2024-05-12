@@ -23,7 +23,7 @@ function App() {
               {/* <SupportedAreas /> */}
               <CategorySegment />
               <CustomProduct />
-              <Reviews />
+              {/*<Reviews /> */}
             </>
           }
         />
