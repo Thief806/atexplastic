@@ -6,10 +6,8 @@ export const products = [
     id: 101,
     name: "Mini tégely 50ml",
     images: [
-      "/images/Mini_jar50ml.jpg",
-      "/images/Mini_jar50ml.jpg",
-      "/images/Mini_jar50ml.jpg",
-      "/images/Mini_jar50ml.jpg",
+      "/images/Termekek/Mini_jar50ml_nyitott.png",
+      "/images/Termekek/Mini_jar50ml_zart.png",
     ],
     details: [
       "Tégely Anyaga: PET",
@@ -17,7 +15,7 @@ export const products = [
       "Súly: 15g",
       "Befogó méretek: 50mm x 40mm",
     ],
-    category: "Mini jar",
+    category: "Mini tégelyek",
     description:
       "Nyaktípus: menetes  Forma: hengeres  A tégely és tető színe megegyezés szerint változtatható.",
   },
@@ -34,7 +32,7 @@ export const products = [
       "Súly 25g", 
       "Befogó méretek: 50mm x 70mm",
     ],
-    category:"Mini jar",
+    category:"Mini tégelyek",
     description:
     "Nyaktípus: menetes  Forma: hengeres  A tégely és tető színe megegyezés szerint változtatható.",
   },
@@ -42,7 +40,9 @@ export const products = [
     id: 201,
     name: "Ovális tégely 150ml",
     images: [
-      "/images/test-product-img.png",
+      "/images/Termekek/Ovalis150ml_nyitott.png",
+      "/images/Termekek/Ovalis150ml_zart_1.png",
+      "/images/Termekek/Ovalis150ml_zart_2.png",
     ],
     details: [
       "Tégely Anyaga: PET", 
@@ -50,26 +50,42 @@ export const products = [
       "Súly 40g", 
       "Befogó méretek: 30mm x 40mm x 60mm"
     ],
-    category:"Ovalis",
+    category:"Ovális tégelyek",
     description:
       "Nyaktípus: menetes  Forma: ovális   A tégely és tető színe megegyezés szerint változtatható.",
   },
   {
-    id: 4,
-    name: "Product Name 4",
-    images: ["/images/test-product-img.png"],
-    details: ["property 1", "property 2", "property 3", "property 4"],
-    category: "",
+    id: 301,
+    name: "Hengeres sima 100ml tégely",
+    images: [
+      "/images/Termekek/Hengeres_sima100ml_nyitott.png",
+      "/images/Termekek/Hengeres_sima100ml_zart.png",
+    ],
+    details: [
+      "Tégely Anyaga: PET", 
+      "Tető anyaga: PP", 
+      "Súly 37g", 
+     "Befogó méretek: 30mm x 70mm", 
+      ],
+    category: "Hengeres sima tégelyek",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
+    "Nyaktípus: menetes  Forma: ovális   A tégely és tető színe megegyezés szerint változtatható.",
   },
   {
-    id: 5,
-    name: "Product Name 5",
-    images: ["/images/test-product-img.png"],
-    details: ["property 5", "property 2", "property 3", "property 4"],
+    id: 401,
+    name: "Hengeres magas 100ml tégely",
+    images: [
+      "/images/Termekek/Hengeres_magas100ml_nyitott.png",
+      "/images/Termekek/Hengeres_magas100ml_zart.png",
+    ],
+    details: [
+      "Tégely Anyaga: PET", 
+     "Tető anyaga: PP", 
+      "Súly 37g", 
+      "Befogó méretek: 25mm x 100mm",
+    ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
+     "Nyaktípus: menetes  Forma: ovális   A tégely és tető színe megegyezés szerint változtatható.",
   },
   {
     id: 6,

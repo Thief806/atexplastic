@@ -4,38 +4,32 @@ import { Link } from "react-router-dom";
 export const Categories = [
   {
     id: 1,
-    name: "Mini tégely",
-    categoryName: "Mini jar",
-    images: ["/images/Mini_jar50ml.jpg"],
-    details: ["Tégely Anyaga: PET", "Tető anyaga: PP"],
+    name: "Mini tégelyek",
+    categoryName: "Mini tégelyek",
+    images: ["/images/Termekek/Mini_jar50ml_nyitott.png"],
+    details: ["Tégely Anyaga: PET", "Tető anyaga: PP", "Mérettartomány: 50ml - 200ml"],
   },
   {
     id: 2,
-    name: "Ovális tégely",
-    categoryName: "Ovalis",
-    images: ["/images/test-product-img.png", "/images/Mini_jar50ml.jpg"],
-    details: ["property 1", "property 2", "property 3", "property 4"],
-    description:
-      "Lorems ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
-  },
+    name: "Ovális tégelyek",
+    categoryName: "Ovális tégelyek",
+    images: ["/images/Termekek/Ovalis150ml_nyitott.png"],
+    details: ["Tégely Anyaga: PET", "Tető Anyaga: PP", "Mérettartomány: 50ml - 450ml"],
+    },
   {
     id: 3,
-    name: "Hengeres sima tégely",
-    categoryName: "Hengeres sima",
-    images: ["/images/test-product-img.png"],
-    details: ["property 1", "property 2", "property 3", "property 4"],
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
-  },
+    name: "Hengeres sima tégelyek",
+    categoryName: "Hengeres sima tégelyek",
+    images: ["/images/Termekek/Hengeres_sima100ml_nyitott.png"],
+    details: ["Tégely Anyaga: PET", "Tető Anyaga: PP", "Mérettartomány: 50ml - 300ml"],
+    },
   {
     id: 4,
-    name: "Hengeres kis szájú tégely",
-    categoryName: "Hengeres kicsi",
-    images: ["/images/test-product-img.png"],
-    details: ["property 1", "property 2", "property 3", "property 4"],
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
-  },
+    name: "Hengeres magas tégelyek",
+    categoryName: "Hengeres magas tégelyek",
+    images: ["/images/Termekek/Hengeres_magas100ml_nyitott.png"],
+    details: ["Tégely Anyaga: PET", "Tető Anyaga: PP", "Mérettartomány: 50ml - 300ml"],
+    },
 ];
 
 function CategorySegment() {
