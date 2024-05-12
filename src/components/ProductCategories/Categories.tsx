@@ -5,13 +5,14 @@ export const Categories = [
   {
     id: 1,
     name: "Mini tégely",
-    categoryName: "Mini",
+    categoryName: "Mini jar",
     images: ["/images/Mini_jar50ml.jpg"],
     details: ["Tégely Anyaga: PET", "Tető anyaga: PP"],
   },
   {
     id: 2,
-    name: "Product Name 2",
+    name: "Ovális tégely",
+    categoryName: "Ovalis",
     images: ["/images/test-product-img.png", "/images/Mini_jar50ml.jpg"],
     details: ["property 1", "property 2", "property 3", "property 4"],
     description:
@@ -19,7 +20,8 @@ export const Categories = [
   },
   {
     id: 3,
-    name: "Product Name 3",
+    name: "Hengeres sima tégely",
+    categoryName: "Hengeres sima",
     images: ["/images/test-product-img.png"],
     details: ["property 1", "property 2", "property 3", "property 4"],
     description:
@@ -27,23 +29,8 @@ export const Categories = [
   },
   {
     id: 4,
-    name: "Product Name 4",
-    images: ["/images/test-product-img.png"],
-    details: ["property 1", "property 2", "property 3", "property 4"],
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
-  },
-  {
-    id: 5,
-    name: "Product Name 5",
-    images: ["/images/test-product-img.png"],
-    details: ["property 5", "property 2", "property 3", "property 4"],
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
-  },
-  {
-    id: 6,
-    name: "Product Name 6",
+    name: "Hengeres kis szájú tégely",
+    categoryName: "Hengeres kicsi",
     images: ["/images/test-product-img.png"],
     details: ["property 1", "property 2", "property 3", "property 4"],
     description:

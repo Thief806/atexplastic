@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 
 export const products = [
   {
-    id: 1,
+    id: 101,
     name: "Mini tégely 50ml",
     images: [
       "/images/Mini_jar50ml.jpg",
@@ -17,26 +17,42 @@ export const products = [
       "Súly: 15g",
       "Befogó méretek: 50mm x 40mm",
     ],
-    category: "Mini",
+    category: "Mini jar",
     description:
       "Nyaktípus: menetes  Forma: hengeres  A tégely és tető színe megegyezés szerint változtatható.",
   },
   {
-    id: 2,
-    name: "Product Name 2",
-    images: ["/images/test-product-img.png", "/images/Mini_jar50ml.jpg"],
-    details: ["property 1", "property 2", "property 3", "property 4"],
+    id: 102,
+    name: "Mini tégely 100ml",
+    images: [
+      "/images/test-product-img.png", 
+      "/images/Mini_jar50ml.jpg",
+    ],
+    details: [
+      "Tégely Anyaga: PET", 
+      "Tető anyaga: PP", 
+      "Súly 25g", 
+      "Befogó méretek: 50mm x 70mm",
+    ],
+    category:"Mini jar",
     description:
-      "Lorems ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
-    category: "Mini",
+    "Nyaktípus: menetes  Forma: hengeres  A tégely és tető színe megegyezés szerint változtatható.",
   },
   {
-    id: 3,
-    name: "Product Name 3",
-    images: ["/images/test-product-img.png"],
-    details: ["property 1", "property 2", "property 3", "property 4"],
+    id: 201,
+    name: "Ovális tégely 150ml",
+    images: [
+      "/images/test-product-img.png",
+    ],
+    details: [
+      "Tégely Anyaga: PET", 
+      "Tető anyaga: PP", 
+      "Súly 40g", 
+      "Befogó méretek: 30mm x 40mm x 60mm"
+    ],
+    category:"Ovalis",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo accusantium aliquid dicta enim ea animi, officia quisquam repellat recusandae consequatur nulla, doloribus tempore unde soluta esse neque ab! Culpa.",
+      "Nyaktípus: menetes  Forma: ovális   A tégely és tető színe megegyezés szerint változtatható.",
   },
   {
     id: 4,
