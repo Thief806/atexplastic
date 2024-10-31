@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Categories = [
   {
     id: 1,
-    name: "Mini tégelyek",
+    name: "Mini tégelyekff",
     categoryName: "Mini tégelyek",
     images: ["/images/Termekek/Mini_jar50ml_nyitott.png"],
     details: ["Tégely Anyaga: PET", "Tető anyaga: PP", "Mérettartomány: 50ml - 200ml"],
